@@ -1,0 +1,27 @@
+<h1>Create a New Order</h1>
+
+<%= form_tag '/recipes', method: :post do %>
+  <div>
+    <%= label_tag :title %>
+    <%= text_title_tag :title %>
+  </div>
+  <div>
+    <%= label_tag :chef %>
+    <%= text_title_tag :chef %>
+  </div>
+  <div>
+    <%= label_tag :prep_time %>
+    <%= text_title_tag :prep_time %>
+  </div>
+  <div>
+    <%= label_tag :ingredients %>
+    <%= text_title_tag :ingredients %>
+  </div>
+  <div>
+    <%= label_tag :directions %>
+    <%= text_title_tag :directions %>
+  </div>
+  <div>
+    <%= submit_tag "Let's Get Cooking!" %>
+  </div>
+<% end %>  
