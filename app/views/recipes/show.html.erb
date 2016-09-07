@@ -3,3 +3,7 @@
 <h5>Time: <%= @recipe.prep_time %></h5>
 <h3>Ingredients: <%= @recipe.ingredients %></h3>
 <h3>Directions: <%= @recipe.directions %></h3>
+
+<%= link_to 'Edit', "/recipes/#{@recipe.id}/edit" %>
+<br>
+<%= link_to 'Delete', "/recipes/#{@recipe.id}", method: :delete %>
