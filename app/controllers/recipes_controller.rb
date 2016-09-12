@@ -1,6 +1,11 @@
 class RecipesController < ApplicationController
   def index
     @recipes = Recipe.all
+    sort_attribute = params[:sort]
+
+    if sort_attribute
+      @recipes = @recipes.order(sort_attribute)
+    end
   end
 
   def show
